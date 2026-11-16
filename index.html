@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Calculadora</title>
+</head>
+<body>
+
+    <h1>Mi Calculadora</h1>
+
+    <input type="number" id="numero1" placeholder="Primer número">
+
+    <input type="number" id="numero2" placeholder="Segundo número">
+
+    <button onclick="sumar()">Sumar</button>
+
+    <h2 id="resultado">Resultado: </h2>
+
+    <script>
+        function sumar() {
+            let numero1 = Number(document.getElementById("numero1").value);
+            let numero2 = Number(document.getElementById("numero2").value);
+
+            let resultado = numero1 + numero2;
+
+            document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+    </script>
+
+</body>
+</html>
